@@ -1,0 +1,12 @@
+valor_pedido=int(input("qual o valor do pedido? "))
+dias_para_entregar=int(input("quantos dias para entregar? "))
+
+def categoria(valor, dias):
+  if valor<100 or dias>7:
+    print ("Normal")
+  elif valor>100 and valor <500 or dias>4 and dias<7:
+    print ("Prioritario")
+  elif valor>500 or dias<4:
+    print ("Urgente")
+
+categoria (valor_pedido,dias_para_entregar)
